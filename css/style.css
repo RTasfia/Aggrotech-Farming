@@ -123,3 +123,17 @@
         padding: 10px 0px 0px 0px;
         color: white;
     }
+    
+    .branch-button {
+        /* width: 3px; */
+        padding: 5px;
+        margin-left: 5px;
+    }
+    
+    .dhaka {
+        margin-left: 150px;
+    }
+    
+    .branch {
+        background-color: rgba(11, 97, 64, 0.645);
+    }
