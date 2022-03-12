@@ -13,34 +13,36 @@
 <link rel="stylesheet" href="../css/p-style.css" type="text/css">
     </head>
     <body>
-        <div class="container">
-        	<div class="row">
-               <div class="col-md-4 item-photo">
-                    <img style="max-width:80%;" src="../image/1.jpg" />
+        <div class="container" style="border: 1px solid grey; border-radius: 5px; height: 150px;">
+        	<div class="row m-5">
+                <div class="col-md-2 item-photo">
+                    <img style="max-width:40%;" src="../image/duckegg.jpg" />
                 </div>
-                <div class="col-md-5" style="border:0px solid gray">
-                   
-                    <h3>Beef</h3>    
-                    
-        
-                    
-                    <h6 class="title-price"><small>Price</small></h6>
-                    <h3 style="margin-top:0px;">Tk 500/kg</h3>
-        
-                    
-                               
-        
-                    
-                    <div class="section" style="padding-bottom:20px;">
-                        <button onclick="handleBeef()" class="btn btn-success"><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart</button>
-                        
-                    </div>                                        
-                </div>                              
-        
-                    
+                <div class="col-md-3" style="border:0px solid gray">
+
+                    <div style="margin-left: 30%;">
+
+                        <button onclick="dEMinus()" class="btn btn-default">
+                            <h4 class="fas fa-minus" id='minus'></h4>
+                        </button>
+                        <button id="dENo" class="btn" style="font-weight: bold; font-size: large;">1</button>
+                        <button onclick="dEPlus()" class="btn btn-default">
+                            <h4 class="fas fa-plus" id='plus'></h4>
+                        </button>
                     </div>
-                </div>		
+
+                    
+                </div>
+
+                <div class="col-md-3">
+                    <h3 style="margin-left:45%">15</h3>
+                </div>
+                <div class="col-md-3">
+                    <h3 style="margin-left:45%" id="dETotalPrice">15</h3>
+                </div>
+                <div class="col-md-1"></div>
             </div>
+
         </div>  
         
         
