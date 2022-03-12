@@ -99,13 +99,18 @@ a {
 }
 
 .card {
-    background-color: mediumseagreen;
-    opacity: 0.6;
+    background-color: rgba(54, 94, 51, 0.974);
+    /* opacity: 0.8; */
     padding: 10px;
 }
 
 .card .card-body {
     align-items: center;
+    color: white;
+}
+
+.card-title {
+    font-size: 17px;
 }
 
 .footer {
