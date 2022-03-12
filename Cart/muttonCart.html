@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="../jscript/cScript.js"></script>
+
+
+<link rel="stylesheet" href="../css/p-style.css" type="text/css">
+    </head>
+    <body>
+        <div class="container" style="border: 1px solid grey; border-radius: 5px; height: 150px;">
+        	<div class="row m-5">
+                <div class="col-md-2 item-photo">
+                    <img style="max-width:40%;" src="../image/mutton.jpg" />
+                </div>
+                <div class="col-md-3" style="border:0px solid gray">
+
+                    <div style="margin-left: 30%;">
+
+                        <button onclick="muttonMinus()" class="btn btn-default">
+                            <h4 class="fas fa-minus" id='minus'></h4>
+                        </button>
+                        <button id="muttonNo" class="btn" style="font-weight: bold; font-size: large;">1</button>
+                        <button onclick="muttonPlus()" class="btn btn-default">
+                            <h4 class="fas fa-plus" id='plus'></h4>
+                        </button>
+                    </div>
+
+                    
+                </div>
+                <div class="col-md-3">
+
+                    <h3 style="margin-left:45%">700</h3>
+
+                </div>
+                <div class="col-md-3">
+                    <h3 style="margin-left:45%" id="muttonTotalPrice">700</h3>
+                </div>
+                <div class="col-md-1">
+
+                </div>
+            </div>
+
+        </div>  
+        
+        
+
+
+        <script>
+             $(document).ready(function(){
+            //-- Click on detail
+            $("ul.menu-items > li").on("click",function(){
+                $("ul.menu-items > li").removeClass("active");
+                $(this).addClass("active");
+            })
+
+            $(".attr,.attr2").on("click",function(){
+                var clase = $(this).attr("class");
+                console.log("clickedddd")
+
+                $("." + clase).removeClass("active");
+                $(this).addClass("active");
+            })
+
+                                  
+        }) 
+        </script>
+        <script src="../jscript/cartScript.js"></script>
+    </body>
+</html>
