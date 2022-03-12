@@ -238,232 +238,235 @@
                     </div>
                 </div>
             </div>
+
+            <div style="width: 84.75%;" id="Goat" class="tabcontent mx-auto">
+                <h3>Goat Chart</h3>
+                <table id="customers">
+                    <thead>
+                        <tr>
+                            <th>Goat ID</th>
+                            <th>Branch ID</th>
+                            <th>Goat Type</th>
+                            <th>Color</th>
+                            <th>Gender</th>
+                            <th>Weight</th>
+                            <th>Food Intake</th>
+                            <th>Milk Production</th>
+                            <th>Shed No</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="goatTable">
+                    </tbody>
+                </table>
+                <div class="mt-5">
+                    <!--UPDATE GOAT-->
+                    <button onclick="goatUpdateFunc()" class="btn btn-success" id="updateBtn">Update</button>
+                    <div id="goatUpdateModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span onclick="goatUpdateClose()" class="close">&times;</span>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="GID" style=" font-weight: 800;">Goat ID</label>
+                                    <input id="GID" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="goatUpdate" style=" font-weight: 800;">Field</label>
+                                    <br>
+                                    <select class="form-control" style="width: 50%;" name="goat" id="goatUpdate">
+                      <option value="G_ID">Select</option>
+                      <option value="Br_ID">Branch ID</option>
+                      <option value="G_Type">Goat Type</option>
+                      <option value="G_Color">Color</option>
+                      <option value="G_Gender">Gender</option>
+                      <option value="G_Weight">Weight</option>
+                      <option value="G_FoodIntake">Food Intake</option>
+                      <option value="G_MilkProduction">Milk Production</option>
+                      <option value="G_Shed_No">Shed No</option>
+                      <option value="G_Status">Status</option>
+                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="gFieldValue" style=" font-weight: 800;">Value</label>
+                                    <input type="text" id="gFieldValue" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
+                                </div>
+                            </form>
+                            <button onclick="handleGoatUpdate()" style="width: 50%;" class="btn btn-success">Update</button>
+                        </div>
+
+                    </div>
+
+                    <!--INSERT GOAT-->
+
+                    <!--INSERT CATTLE-->
+
+                    <button onclick="goatInsertFunc()" class="btn btn-success ml-3" id="insertBtn">Insert</button>
+                    <div id="goatInsertModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span onclick="goatInsertClose()" class="close">&times;</span>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="g_id" style=" font-weight: 800;">Goat ID</label>
+                                    <input id="g_id" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="g_br" style=" font-weight: 800;">Breed</label>
+                                    <input id="g_br" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="g_type" style=" font-weight: 800;">Goat Type</label>
+                                    <input id="g_type" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="g_color" style=" font-weight: 800;">Color</label>
+                                    <input id="g_color" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="g_gender" style=" font-weight: 800;">Gender</label>
+                                    <input id="g_gender" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="g_weight" style=" font-weight: 800;">Weight</label>
+                                    <input id="g_weight" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="g_fdIntk" style=" font-weight: 800;">Food Intake</label>
+                                    <input id="g_fdIntk" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="g_mp" style=" font-weight: 800;">Milk Production</label>
+                                    <input id="g_mp" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="g_s_no" style=" font-weight: 800;">Shed No</label>
+                                    <input id="g_s_no" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="g_status" style=" font-weight: 800;">Status</label>
+                                    <input id="g_status" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
+                                </div>
+
+
+                            </form>
+                            <button onclick="handleGoatInsert()" style="width: 50%;" class="btn btn-success">Insert</button>
+                        </div>
+
+                    </div>
+
+                    <!--DELETE CATTLE-->
+                    <button onclick="goatDeleteFunc()" class="btn btn-success ml-3" id="deleteBtn">Delete</button>
+                    <div id="deleteGoatModal" class="modal">
+
+                        <!-- Modal content -->
+
+
+                        <div class="modal-content">
+                            <span onclick="goatDeleteClose()" class="close">&times;</span>
+                            <div class="form-group">
+                                <label for="gId" style=" font-weight: 800;">Cow ID</label>
+                                <input id="gId" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
+                            </div>
+                            <button onclick="handleGoatDelete()" style="width: 50%;" class="btn btn-success">Delete</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+            <!--***** CHICKEN *****-->
+            <div style="width: 84.75%;" id="Chicken" class="tabcontent mx-auto">
+                <h3>Chicken Chart</h3>
+                <table id="customers">
+                    <thead>
+                        <tr>
+                            <th>Chicken ID</th>
+                            <th>Branch ID</th>
+                            <th>Chicekn Type</th>
+                            <th>Chicekn Number</th>
+                            <th>Chicken Breed</th>
+                            <th>Food Intake</th>
+                            <th>Egg Production</th>
+                            <th>Shed No</th>
+                        </tr>
+                    </thead>
+                    <tbody id="chickenTable">
+                    </tbody>
+                </table>
+                <div class="mt-5">
+                    <button onclick="" class="btn btn-success" id="updateBtn">Update</button>
+                    <button onclick="" class="btn btn-success ml-3" id="insertBtn">Insert</button>
+                    <button onclick="" class="btn btn-success ml-3" id="deleteBtn">Delete</button>
+                </div>
+            </div>
+
+            <!-- ***** DUCK ***** -->
+            <div style="width: 84.75%;" id="Duck" class="tabcontent mx-auto">
+                <h3>Duck Chart</h3>
+                <table id="customers">
+                    <thead>
+                        <tr>
+                            <th>Duck</th>
+                            <th>Branch ID ID</th>
+                            <th>Duck Type</th>
+                            <th>Duck Number</th>
+                            <th>Duck Breed</th>
+                            <th>Food Intake</th>
+                            <th>Egg Production</th>
+                            <th>Shed No</th>
+                        </tr>
+                    </thead>
+                    <tbody id="duckTable">
+                    </tbody>
+                </table>
+                <div class="mt-5">
+                    <button onclick="" class="btn btn-success" id="updateBtn">Update</button>
+                    <button onclick="" class="btn btn-success ml-3" id="insertBtn">Insert</button>
+                    <button onclick="" class="btn btn-success ml-3" id="deleteBtn">Delete</button>
+                </div>
+            </div>
+
+            <!-- ***** FISH ***** -->
+            <div style="width: 84.75%;" id="Fish" class="tabcontent mx-auto">
+                <h3>Fishery Chart</h3>
+                <table id="customers">
+                    <thead>
+                        <tr>
+                            <th>Fish ID</th>
+                            <th>Branch ID</th>
+                            <th>Fish Type</th>
+                            <th>Food Intake</th>
+                            <th>Relasing Time</th>
+                            <th>Reproduction</th>
+                            <th>Approximate Quantity</th>
+                            <th>Fishing Time</th>
+                            <th>PondNo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="fishTable">
+                    </tbody>
+                </table>
+                <div class="mt-5">
+                    <button onclick="" class="btn btn-success" id="updateBtn">Update</button>
+                    <button onclick="" class="btn btn-success ml-3" id="insertBtn">Insert</button>
+                    <button onclick="" class="btn btn-success ml-3" id="deleteBtn">Delete</button>
+                </div>
+            </div>
+
+
         </div>
 
         <!--***** GOAT *****-->
-        <div style="width: 84.75%;" id="Goat" class="tabcontent mx-auto">
-            <h3>Goat Chart</h3>
-            <table id="customers">
-                <thead>
-                    <tr>
-                        <th>Goat ID</th>
-                        <th>Branch ID</th>
-                        <th>Goat Type</th>
-                        <th>Color</th>
-                        <th>Gender</th>
-                        <th>Weight</th>
-                        <th>Food Intake</th>
-                        <th>Milk Production</th>
-                        <th>Shed No</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody id="goatTable">
-                </tbody>
-            </table>
-            <div class="mt-5">
-                <!--UPDATE GOAT-->
-                <button onclick="goatUpdateFunc()" class="btn btn-success" id="updateBtn">Update</button>
-                <div id="goatUpdateModal" class="modal">
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span onclick="goatUpdateClose()" class="close">&times;</span>
-                        <form action="">
-                            <div class="form-group">
-                                <label for="GID" style=" font-weight: 800;">Goat ID</label>
-                                <input id="GID" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="goatUpdate" style=" font-weight: 800;">Field</label>
-                                <br>
-                                <select class="form-control" style="width: 50%;" name="goat" id="goatUpdate">
-                  <option value="G_ID">Select</option>
-                  <option value="Br_ID">Branch ID</option>
-                  <option value="G_Type">Goat Type</option>
-                  <option value="G_Color">Color</option>
-                  <option value="G_Gender">Gender</option>
-                  <option value="G_Weight">Weight</option>
-                  <option value="G_FoodIntake">Food Intake</option>
-                  <option value="G_MilkProduction">Milk Production</option>
-                  <option value="G_Shed_No">Shed No</option>
-                  <option value="G_Status">Status</option>
-                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="gFieldValue" style=" font-weight: 800;">Value</label>
-                                <input type="text" id="gFieldValue" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
-                            </div>
-                        </form>
-                        <button onclick="handleGoatUpdate()" style="width: 50%;" class="btn btn-success">Update</button>
-                    </div>
-
-                </div>
-
-                <!--INSERT GOAT-->
-
-                <!--INSERT CATTLE-->
-
-                <button onclick="goatInsertFunc()" class="btn btn-success ml-3" id="insertBtn">Insert</button>
-                <div id="goatInsertModal" class="modal">
-
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span onclick="goatInsertClose()" class="close">&times;</span>
-                        <form action="">
-                            <div class="form-group">
-                                <label for="g_id" style=" font-weight: 800;">Goat ID</label>
-                                <input id="g_id" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="g_br" style=" font-weight: 800;">Breed</label>
-                                <input id="g_br" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="g_type" style=" font-weight: 800;">Goat Type</label>
-                                <input id="g_type" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="g_color" style=" font-weight: 800;">Color</label>
-                                <input id="g_color" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="g_gender" style=" font-weight: 800;">Gender</label>
-                                <input id="g_gender" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="g_weight" style=" font-weight: 800;">Weight</label>
-                                <input id="g_weight" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="g_fdIntk" style=" font-weight: 800;">Food Intake</label>
-                                <input id="g_fdIntk" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="g_mp" style=" font-weight: 800;">Milk Production</label>
-                                <input id="g_mp" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="g_s_no" style=" font-weight: 800;">Shed No</label>
-                                <input id="g_s_no" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="g_status" style=" font-weight: 800;">Status</label>
-                                <input id="g_status" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
-                            </div>
-
-
-                        </form>
-                        <button onclick="handleGoatInsert()" style="width: 50%;" class="btn btn-success">Insert</button>
-                    </div>
-
-                </div>
-
-                <!--DELETE CATTLE-->
-                <button onclick="goatDeleteFunc()" class="btn btn-success ml-3" id="deleteBtn">Delete</button>
-                <div id="deleteGoatModal" class="modal">
-
-                    <!-- Modal content -->
-
-
-                    <div class="modal-content">
-                        <span onclick="goatDeleteClose()" class="close">&times;</span>
-                        <div class="form-group">
-                            <label for="gId" style=" font-weight: 800;">Cow ID</label>
-                            <input id="gId" type="text" class="form-control" style="width: 50%;" aria-describedby="emailHelp" required>
-                        </div>
-                        <button onclick="handleGoatDelete()" style="width: 50%;" class="btn btn-success">Delete</button>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-
-        </div>
-        <!--***** CHICKEN *****-->
-        <div style="width: 84.75%;" id="Chicken" class="tabcontent mx-auto">
-            <h3>Chicken Chart</h3>
-            <table id="customers">
-                <thead>
-                    <tr>
-                        <th>Chicken ID</th>
-                        <th>Branch ID</th>
-                        <th>Chicekn Type</th>
-                        <th>Chicekn Number</th>
-                        <th>Chicken Breed</th>
-                        <th>Food Intake</th>
-                        <th>Egg Production</th>
-                        <th>Shed No</th>
-                    </tr>
-                </thead>
-                <tbody id="chickenTable">
-                </tbody>
-            </table>
-            <div class="mt-5">
-                <button onclick="" class="btn btn-success" id="updateBtn">Update</button>
-                <button onclick="" class="btn btn-success ml-3" id="insertBtn">Insert</button>
-                <button onclick="" class="btn btn-success ml-3" id="deleteBtn">Delete</button>
-            </div>
-        </div>
-
-        <!-- ***** DUCK ***** -->
-        <div style="width: 84.75%;" id="Duck" class="tabcontent mx-auto">
-            <h3>Duck Chart</h3>
-            <table id="customers">
-                <thead>
-                    <tr>
-                        <th>Duck</th>
-                        <th>Branch ID ID</th>
-                        <th>Duck Type</th>
-                        <th>Duck Number</th>
-                        <th>Duck Breed</th>
-                        <th>Food Intake</th>
-                        <th>Egg Production</th>
-                        <th>Shed No</th>
-                    </tr>
-                </thead>
-                <tbody id="duckTable">
-                </tbody>
-            </table>
-            <div class="mt-5">
-                <button onclick="" class="btn btn-success" id="updateBtn">Update</button>
-                <button onclick="" class="btn btn-success ml-3" id="insertBtn">Insert</button>
-                <button onclick="" class="btn btn-success ml-3" id="deleteBtn">Delete</button>
-            </div>
-        </div>
-
-        <!-- ***** FISH ***** -->
-        <div style="width: 84.75%;" id="Fish" class="tabcontent mx-auto">
-            <h3>Fishery Chart</h3>
-            <table id="customers">
-                <thead>
-                    <tr>
-                        <th>Fish ID</th>
-                        <th>Branch ID</th>
-                        <th>Fish Type</th>
-                        <th>Food Intake</th>
-                        <th>Relasing Time</th>
-                        <th>Reproduction</th>
-                        <th>Approximate Quantity</th>
-                        <th>Fishing Time</th>
-                        <th>PondNo</th>
-                    </tr>
-                </thead>
-                <tbody id="fishTable">
-                </tbody>
-            </table>
-            <div class="mt-5">
-                <button onclick="" class="btn btn-success" id="updateBtn">Update</button>
-                <button onclick="" class="btn btn-success ml-3" id="insertBtn">Insert</button>
-                <button onclick="" class="btn btn-success ml-3" id="deleteBtn">Delete</button>
-            </div>
-        </div>
 
 
     </div>
-    </div>
+
 
 
 
