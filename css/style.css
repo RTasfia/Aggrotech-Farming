@@ -1,136 +1,125 @@
-
-body {
-    background-color: rgb(227, 255, 242);
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: left;
-    color: rgba(0, 8, 14, 0.623);
+    body {
+        background-color: rgb(227, 255, 242);
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: left;
+        color: rgba(0, 8, 14, 0.623);
+    }
     
-}
-a {
-    text-decoration: none;
-}
-.row
-{
-    padding-top:10px;
-    padding-bottom: 10px;
-}
-
-.top-nav {
-    background: #004730;
-    align-items: center;
-    align-content: center;
-    /* overflow: hidden; */
-}
-.top_left
-{
- 
-    font-size: 30px;
-    padding-left: 60px;
-    align-items: center;
-
-}
-.top_left a
-{
-    color: #86c17a;
-}
-
-
-.top_right .btn{
-    float: right;
+    a {
+        text-decoration: none;
+    }
     
-    background-color: #86c17a;
-}
-
-.header
-{
-    align-items: center;
-    display: flex;
-}
-.header .logo
-{
-    height: 120px;
-    width: 160px;
-}
-
-.navbar{
-    width: 100%;
-    background-color:#004730;
-    font-size: 20px;
-    align-items: center;
+    .row {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     
-}
-.nav{
-    margin-left: 285px;
+    .top-nav {
+        background: #004730;
+        align-items: center;
+        align-content: center;
+        /* overflow: hidden; */
+    }
     
-}
-
-.nav li a{
-   
-    color: #86c17a;
-}
-/* .nav li:hover{
+    .top_left {
+        font-size: 30px;
+        padding-left: 60px;
+        align-items: center;
+    }
+    
+    .top_left a {
+        color: #86c17a;
+    }
+    
+    .top_right .btn {
+        float: right;
+        background-color: #86c17a;
+    }
+    
+    .header {
+        align-items: center;
+        display: flex;
+    }
+    
+    .header .logo {
+        height: 120px;
+        width: 160px;
+    }
+    
+    .navbar {
+        width: 100%;
+        background-color: #004730;
+        font-size: 20px;
+        align-items: center;
+    }
+    
+    .nav {
+        margin-left: 285px;
+    }
+    
+    .nav li a {
+        color: #86c17a;
+    }
+    /* .nav li:hover{
     color: navy;
     background: transparent;
 } */
-/* Header */
-
-
-
-.nav-item li a{
-
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    line-height: 1.42857143;
-    color: black;
-
-
-    font-family: 'open sans', arial, sans-serif;
-    box-sizing: border-box;
-    /*  position: absolute;  */
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    float: left;
-    font-size: 14px;
-    text-align: center;
-    list-style: none;
-    background-color: #fff;
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    display: block;
-    border-radius: 0;
-    background-clip: padding-box;
-    margin: 0;
-    border: none;
-    padding: 0;
-    text-transform: none;
-    min-width: 220px;
-
-}
-.card
-{
-    background-color: mediumseagreen;
-    opacity:0.6;
-    padding: 10px;
-}
-.footer
-{
-    background-color: #86c17a;
-    /* padding: 15px 0px 0px 0px; */
-    margin-top: 10px;
-}
-.footer .f_logo img
-{
-    height: 200px;
-    opacity: 100%;
-}
-.copyright
-{
-    background-color:#004730;
-    padding: 10px 0px 0px 0px;
-    color: white;
-
-}
-
-
-
-
+    /* Header */
+    
+    .nav-item li a {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        line-height: 1.42857143;
+        color: black;
+        font-family: 'open sans', arial, sans-serif;
+        box-sizing: border-box;
+        /*  position: absolute;  */
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        float: left;
+        font-size: 14px;
+        text-align: center;
+        list-style: none;
+        background-color: #fff;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+        display: block;
+        border-radius: 0;
+        background-clip: padding-box;
+        margin: 0;
+        border: none;
+        padding: 0;
+        text-transform: none;
+        min-width: 220px;
+    }
+    
+    .card {
+        background-color: rgba(54, 94, 51, 0.974);
+        padding: 10px;
+    }
+    
+    .card .card-body {
+        align-items: center;
+        color: white;
+    }
+    
+    .card-title {
+        font-size: 17px;
+    }
+    
+    .footer {
+        background-color: #86c17a;
+        /* padding: 15px 0px 0px 0px; */
+        margin-top: 10px;
+    }
+    
+    .footer .f_logo img {
+        height: 200px;
+        opacity: 100%;
+    }
+    
+    .copyright {
+        background-color: #004730;
+        padding: 10px 0px 0px 0px;
+        color: white;
+    }
